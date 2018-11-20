@@ -1,3 +1,5 @@
+require 'pg'
+
 class BookmarkList
 
   def self.all
