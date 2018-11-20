@@ -8,11 +8,11 @@
   <body>
     <h1>Welcome to the bookmark manager.</h1>
 
-    <form action='/bookmarks' method='get'>
-    <div class="bookmark_button">
-      <button type="submit">See Bookmarks</button>
-    </div>
-    </form>
-    
+    <ul>
+      <% @bookmarks.each do |bookmark| %>
+        <li><%= bookmark %></li>
+      <% end %>
+    </ul>
+
   </body>
 </html>
