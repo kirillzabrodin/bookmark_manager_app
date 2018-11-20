@@ -5,10 +5,12 @@
         1,
         null,
         1,
-        1,
-        1,
+        null,
         1,
         null,
+        1,
+        1,
+        1,
         1,
         1,
         1,
@@ -17,6 +19,8 @@
         null
       ],
       "/Users/kirillzabrodin/Projects/bookmark_manager_app/spec/features/bookmark_view_spec.rb": [
+        1,
+        1,
         1,
         1,
         1,
@@ -33,6 +37,6 @@
         null
       ]
     },
-    "timestamp": 1542643649
+    "timestamp": 1542727498
   }
 }

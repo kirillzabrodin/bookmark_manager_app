@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require './lib/bookmark_list'
+require 'pg'
 
 # here is a comment for rubocop
 class BookmarkManager < Sinatra::Base
