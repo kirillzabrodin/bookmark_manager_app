@@ -1,7 +1,7 @@
 require 'bookmark_list'
 require 'pg'
 
-describe BookmarkList do
+describe Bookmark do
   describe '.all' do
     it 'returns a list of bookmarks' do
       connection = PG.connect(dbname: 'bookmark_manager_test')
@@ -10,11 +10,21 @@ describe BookmarkList do
       connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.destroyallsoftware.com');")
       connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.google.com');")
 
-      bookmarks = BookmarkList.all
+      bookmarks = Bookmark.all
 
       expect(bookmarks).to include('http://www.makersacademy.com')
       expect(bookmarks).to include('http://www.destroyallsoftware.com')
       expect(bookmarks).to include('http://www.google.com')
+    end
+  end
+
+  describe '.create' do
+    it 'adds a new bookmark' do
+      Bookmark.create(url: "https://www.crunchyroll.co.uk")
+
+      bookmarks = Bookmark.all
+
+      expect(bookmarks).to include("https://www.crunchyroll.co.uk")
     end
   end
 end
