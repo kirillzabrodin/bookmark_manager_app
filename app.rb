@@ -1,8 +1,8 @@
 require 'sinatra/base'
 require './lib/bookmark'
 require 'pg'
+require './lib/database_connection_setup'
 
-# here is a comment for rubocop
 class BookmarkManager < Sinatra::Base
 
   enable :sessions, :method_override
@@ -36,13 +36,12 @@ class BookmarkManager < Sinatra::Base
   end
 
   patch '/bookmarks/:id' do
-    connection = PG.connect(dbname: 'bookmark_manager_test')
-    connection.exec("UPDATE bookmarks SET url = '#{params[:url]}', title = '#{params[:title]}' WHERE id = '#{params[:id]}'")
-    redirect('/bookmarks')
+    Bookmark.update(id: params[:id], url: params[:url], title: params[:title])
+    redirect '/bookmarks'
   end
 
   get '/bookmarks/:id/edit' do
-    @bookmark_id = params[:id]
+    @bookmark = Bookmark.find(id: params[:id])
     erb :'bookmarks/edit'
   end
 

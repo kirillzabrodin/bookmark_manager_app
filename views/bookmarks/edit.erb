@@ -8,12 +8,12 @@
   <body>
     <h1>Welcome to the bookmark manager add function.</h1>
 
-    <form action='/bookmarks/<%= @bookmark_id %>' method='post'>
+    <form action='/bookmarks/<%= @bookmark.id %>' method='post'>
       <h2>Leave empty if value unchanged</h2>
       <input type="hidden" name="_method" value="PATCH" />
-      <input type="text" name="title" placeholder="Title" />
+      <input type="text" name="title" placeholder="<%= @bookmark.title %>" value='<%= @bookmark.title %>'/>
       <br>
-      <input type="text" name="url">
+      <input type="text" name="url" value='<%= @bookmark.url %>' placeholder="<%= @bookmark.url %>">
       <br>
     <div class="bookmark_button">
       <button type="submit">Submit</button>
