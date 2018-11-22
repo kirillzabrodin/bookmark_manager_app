@@ -1,11 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/kirillzabrodin/Projects/bookmark_manager_app/spec/bookmark_list_spec.rb": [
-        1,
-        1,
-        null,
-        1,
+      "/Users/kirillzabrodin/Projects/bookmark_manager_app/spec/bookmark_spec.rb": [
         1,
         1,
         1,
@@ -13,9 +9,28 @@
         1,
         1,
         1,
+        1,
+        null,
+        1,
+        1,
+        1,
         null,
         1,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
         1,
         1,
         1,
@@ -35,9 +50,8 @@
       ],
       "/Users/kirillzabrodin/Projects/bookmark_manager_app/spec/features/bookmark_view_spec.rb": [
         1,
+        1,
         null,
-        1,
-        1,
         1,
         1,
         1,
@@ -50,6 +64,20 @@
         null,
         null
       ],
+      "/Users/kirillzabrodin/Projects/bookmark_manager_app/spec/features/delete_bookmark_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/kirillzabrodin/Projects/bookmark_manager_app/spec/features/index_spec.rb": [
         1,
         1,
@@ -57,8 +85,28 @@
         1,
         null,
         null
+      ],
+      "/Users/kirillzabrodin/Projects/bookmark_manager_app/spec/features/updating_bookmark_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1542807965
+    "timestamp": 1542894433
   }
 }

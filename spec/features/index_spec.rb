@@ -1,5 +1,5 @@
 feature 'Index page' do
-  scenario 'hello world setup test' do
+  scenario 'Setup test' do
     visit '/'
     expect(page).to have_content "Welcome to the bookmark manager."
   end
