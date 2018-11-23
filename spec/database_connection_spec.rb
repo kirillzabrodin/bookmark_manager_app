@@ -10,7 +10,6 @@ describe DatabaseConnection do
 
     it 'sets up a database with the given name' do
       connection = DatabaseConnection.setup('bookmark_manager_test')
-
       expect(DatabaseConnection.connection).to eq connection
     end
   end

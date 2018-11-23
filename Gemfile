@@ -10,5 +10,6 @@ gem 'rubocop'
 gem 'simplecov'
 gem 'simplecov-console'
 gem 'sinatra'
+gem 'sinatra-flash'
 gem 'thin'
 # gem "rails"

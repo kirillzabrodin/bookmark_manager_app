@@ -11,6 +11,7 @@ require 'rspec'
 require 'rubocop'
 require 'simplecov'
 require 'simplecov-console'
+require 'sinatra/flash'
 
 Capybara.app = BookmarkManager
 
